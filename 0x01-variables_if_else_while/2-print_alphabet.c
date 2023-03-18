@@ -13,7 +13,6 @@ int main(void)
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	  {
 		putchar(lowercase);
-		printf("\n");
 	  }
 	return (0);
 }
