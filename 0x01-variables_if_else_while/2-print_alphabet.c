@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - Prints the alphabet in lowercase.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-        char lowercase;
+	char lowercase;
 
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
-	  {
-	          putchar(lowercase);
-	  }
-	printf("\n");
+		putchar(lowercase);
+
+	putchar('\n');
+
 	return (0);
 }
