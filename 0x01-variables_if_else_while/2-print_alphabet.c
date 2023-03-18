@@ -12,7 +12,7 @@ int main(void)
 
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	  {
-		putchar(low);
+		putchar(lowercase);
 		printf("\n");
 	  }
 	return (0);
