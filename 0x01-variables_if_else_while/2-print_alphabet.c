@@ -14,6 +14,6 @@ int main(void)
 	  {
 	          putchar(lowercase);
 	  }
-        printf(" ");
+	printf("\n");
 	return (0);
 }
