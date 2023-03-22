@@ -9,7 +9,7 @@ int main(void)
 {
 	int count;
 	unsigned long num1 = 0, num2 = 1, sum;
-	unsigned long num1_half1,num1_half2, num2_half1, num2_half2;
+	unsigned long num1_half1, num1_half2, num2_half1, num2_half2;
 	unsigned long half1, half2;
 
 	for (count = 0; count < 92; count++)
