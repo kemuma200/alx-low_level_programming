@@ -1,16 +1,15 @@
-#include "main.h"
+#include <stdio.h>
 /**
  *main - prints sum of even fib numbers
  *@num1: first number
  *@num2: second number
  *@sum: summation of fin numbers
- *@max_digit: Maximum value of fib number
+ *
  *Return: Always (0)
  */
 int main(void)
 {
 	unsigned long num1 = 0, num2 = 1, sum = 0;
-	max_digit = 4000000;
 
 	while (num2 < 4000001)
 	{
