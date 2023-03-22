@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - prints the characters of _putchar followed by a new line
- *
- *Return : Always (0) (Success)
-*/
+ * main - Entry point. Prints characters in _putchar followed by  a new line
+ * 
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
