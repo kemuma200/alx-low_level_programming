@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 /**
  *print_times_table - prints the n times time table
  *@n: parameter in question
