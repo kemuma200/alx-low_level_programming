@@ -1,10 +1,6 @@
 #include <stdio.h>
 /**
  *main - prints the first 50 fib numbers
- *@num1: first number
- *@num2: second fib number
- *@sum: summation of numbers
- *
  *Return: Always 0
  */
 int main(void)
