@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
-/**
- * main - Entry point. Prints characters in _putchar followed by  a new line
- * 
- * Return: Always 0 (Success)
- */
 
+/**
+ * main - Prints the characters present in "_putchar" followed by a new line.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	_putchar('_');
@@ -17,5 +17,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
