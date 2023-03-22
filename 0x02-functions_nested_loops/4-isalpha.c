@@ -9,10 +9,9 @@
  */
 int _isalpha(int c)
 {
-	regex_t regex;
 	int alpha_check;
 
-	alpha_check = regcomp(&regex, "[A-Za-z]", 1);
+	alpha_check = regcomp(c, "[A-Za-z]", 1);
 
 	if (alpha_check == 1)
 		return (1);
