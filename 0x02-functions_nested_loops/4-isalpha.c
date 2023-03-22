@@ -7,13 +7,10 @@
  *
  * Return : 1 if letter is part of alphabet, 0 if not
  */
-int _isalpha(int c)
+int _islower(int c)
 {
-	int alpha_check;
-
-	alpha_check = regcomp(c, "[A-Za-z]", 1);
-
-	if (alpha_check == 1)
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
