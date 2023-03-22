@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <regex.h>
 #include "main.h"
 /**
  * _isalpha - checks if character is found in the alphabet
  * @c: character to be considered
  *
- * Return : 1 if letter is part of alphabet, 0 if not
+ * Return: 1 if letter is part of alphabet, 0 if not
  */
 int _isalpha(int c)
 {
