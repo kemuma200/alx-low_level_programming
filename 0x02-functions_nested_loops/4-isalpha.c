@@ -7,7 +7,7 @@
  *
  * Return : 1 if letter is part of alphabet, 0 if not
  */
-int _islower(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') ||
 	    (c >= 'A' && c <= 'Z'))
