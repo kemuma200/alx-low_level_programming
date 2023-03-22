@@ -10,6 +10,7 @@
 int main(void)
 {
 	unsigned long num1 = 0, num2 = 1, sum = 0;
+	unsigned long first_number;
 
 	while (num2 < 4000001)
 	{
@@ -21,6 +22,6 @@ int main(void)
 		num1 = num2;
 		num2 += first_number;
 	}
-	printf("%.0f\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
