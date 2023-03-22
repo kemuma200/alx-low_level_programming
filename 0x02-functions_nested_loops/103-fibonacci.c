@@ -1,15 +1,13 @@
 #include <stdio.h>
 /**
  *main - prints sum of even fib numbers
- *@num1: first number
- *@num2: second number
- *@sum: summation of fin numbers
  *
  *Return: Always (0)
  */
 int main(void)
 {
-	unsigned long num1 = 0, num2 = 1, sum = 0;
+	unsigned long num1 = 0, num2 = 1;
+	float sum = 0;
 	unsigned long first_number;
 
 	while (num2 < 4000001)
@@ -22,6 +20,6 @@ int main(void)
 		num1 = num2;
 		num2 += first_number;
 	}
-	printf("%lx\n", sum);
+	printf("%.0f\n", sum);
 	return (0);
 }
