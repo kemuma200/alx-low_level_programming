@@ -6,19 +6,18 @@
  */
 int main(void)
 {
-	unsigned long num1 = 0, num2 = 1;
+	unsigned long num1 = 0, num2 = 1, total_sum;
 	float sum = 0;
-	unsigned long first_number;
 
 	while (num2 < 4000001)
 	{
-		if ((num1 % 2) == 0)
+		total_sum = num1 + num2
+		if ((total_sum % 2) == 0)
 			sum += num1;
 		if ((num2 % 2) == 0)
 			sum += num2;
-		first_number = num1;
 		num1 = num2;
-		num2 += first_number;
+		num2 += total_sum;
 	}
 	printf("%.0f\n", sum);
 	return (0);
