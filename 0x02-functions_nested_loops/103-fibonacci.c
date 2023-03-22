@@ -11,11 +11,9 @@ int main(void)
 
 	while (num2 < 4000001)
 	{
-		total_sum = num1 + num2
+		total_sum = num1 + num2;
 		if ((total_sum % 2) == 0)
 			sum += num1;
-		if ((num2 % 2) == 0)
-			sum += num2;
 		num1 = num2;
 		num2 += total_sum;
 	}
