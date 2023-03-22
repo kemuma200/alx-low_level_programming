@@ -18,7 +18,7 @@ int main(void)
 			sum += num1;
 		if ((num2 % 2) == 0)
 			sum += num2;
-		num1 = first_number;
+		first_number = num1;
 		num1 = num2;
 		num2 += first_number;
 	}
