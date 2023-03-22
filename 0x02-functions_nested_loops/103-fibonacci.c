@@ -22,6 +22,6 @@ int main(void)
 		num1 = num2;
 		num2 += first_number;
 	}
-	printf("%x\n", sum);
+	printf("%lx\n", sum);
 	return (0);
 }
