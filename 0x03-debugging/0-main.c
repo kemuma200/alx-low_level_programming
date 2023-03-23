@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - tess if function gives correct output
  * Return: Always 0
