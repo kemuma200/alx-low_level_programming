@@ -5,19 +5,19 @@
  */
 void print_triangle(int size)
 {
-	int hash, index;
+	int symbol, index;
 
 	if (size > 0)
 	{
-		for (hash = 1; hash <= size; hash++)
+		for (symbol = 1; symbol <= size; symbol++)
 		{
-			for (index = size - hash; index > 0; index--)
+			for (index = size - symbol; index > 0; index--)
 				_putchar(' ');
 
-			for (index = 0; index < hash; index++)
+			for (index = 0; index < symbol; index++)
 				_putchar('#');
 
-			if (hash == size)
+			if (symbol == size)
 				continue;
 
 			_putchar('\n');
