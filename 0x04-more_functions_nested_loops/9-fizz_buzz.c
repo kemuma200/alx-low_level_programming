@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints Buzz each numbers of 3 and 5.
+ * main - prints fizz if divisible by 3
+ *	prints 5 if divisible by 5
+ *	prints fizzbuzz if divisible by both 5 and 3
+ *	prints the number otherwise
  * Return: Always 0.
  */
 int main(void)
 {
 	int n;
 
-	for (n = 1; n <= 100; n++)
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
 		if ((n % 3 == 0) && (n % 5 == 0))
 		{
