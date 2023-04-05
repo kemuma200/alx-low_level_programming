@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_print_chessboard - prints the entire chessboard
+ *print_chessboard - prints the entire chessboard
  *@a: Array to be considered
  *
  */
