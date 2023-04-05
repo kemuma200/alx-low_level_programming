@@ -9,24 +9,35 @@
  *
  *Return: pointer to beginning substring
  */
-boolean *str_comp(
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
+	int m, f, i, j;
 
 	i = 0;
 	while (*(needle + i) != '\0')
 	{
 		i++;
 	}
+	if (i == 0)
+	{
+		return (haystack);
+	}
 	j = 0;
 	while (*(haystack + j) != '\0')
 	{
 		if (needle[0] == *(haystack + j))
 		{
-			if (*(needle + i) == *(haystack + i))
+			m = i;
+			for (m = m - 1; m < i && needle[m] != '\0' && haystack[m] != '\0'; m--)
 			{
-				return (haystack + j);
+				f = 0;
+				if (*(needle + f) == *(haystack + j + f)
+				{
+					f++;
+					if (f == i - 1)
+					{
+						return (haystack + j + f);
+					}
 			}
 		}
 		j++;
