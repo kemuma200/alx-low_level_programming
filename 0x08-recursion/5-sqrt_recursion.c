@@ -13,7 +13,7 @@ int _sqrt(int a, int c)
 		return (c);
 	if (c * c > a)
 		return (-1);
-	return _sqrt(a, c + 1);
+	return (_sqrt(a, c + 1));
 }
 /**
  *_sqrt_recursion - prints the natiral sqrt of a number
