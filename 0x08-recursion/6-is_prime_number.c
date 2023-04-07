@@ -10,13 +10,13 @@
 
 int prime_number(int x, int y)
 {
-	if (x == 1)
+	if (x == y)
 		return (1);
 	else
 		{
 			if (x % y == 0)
 				return (0);
-			return (prime_number(x, y - 1);
+			return (prime_number(x, y + 1));
 		}
 }
 /**
@@ -27,7 +27,7 @@ int prime_number(int x, int y)
 
 int is_prime_number(int n)
 {
-	if ( n <= 0)
+	if ( n <= 1)
 		return (0);
-	return (prime_number(n,(n / 2));
+	return (prime_number(n, 2));
 }
