@@ -32,7 +32,7 @@ int str_length(char *s)
 /**
  * is_palindrome - checks if string is a palindrome
  *@s: String to be considered
- *Returns: function which checks if string is a palindrome
+ *Return: function which checks if string is a palindrome
  *
  */
 
