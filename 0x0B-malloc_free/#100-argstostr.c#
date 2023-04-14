@@ -1,0 +1,43 @@
+#include "main.h"
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+char *argstostr(int ac, char **av)
+{
+	char *p;
+	int i, j, k, len;
+
+	if (ac == NULL || av == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			len += 1;
+		}
+		len += 1;
+	}
+	len++;
+
+	p = malloc(sizeof(char) * size);
+	if (p == NULL)
+	{
+		free(p);
+		return (NULL);
+	}
+	for (i = 0; i < ac; i++)
+	{
+	  for (j = 0; av[i][j] != '\0'; j++;)
+		{
+		}
+		ptr[count2] = '\n';
+		count2++;
+	}
+	ptr[count2] = '\0';
+	return (p);
+}
