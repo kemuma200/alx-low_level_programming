@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	j = calloc(size * sizeof(char));
+	j = calloc(size, sizeof(char));
 
 	if (j == NULL)
 	{
@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 	{
 		for (i = 0; i < size; i++)
 		{
-			*(j+i) = c;
+			*(j + i) = c;
 		}
 	}
 	return (j);
