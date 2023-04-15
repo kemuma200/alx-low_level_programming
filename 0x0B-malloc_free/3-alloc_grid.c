@@ -1,4 +1,6 @@
 #include "main.h"
+#include "stddef.h"
+#include "stdlib.h"
 
 /**
  *alloc_grid - function that returns a pointer
