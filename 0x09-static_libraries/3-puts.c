@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_puts - prints the string followed by a new line
  * @str: String in consideration
