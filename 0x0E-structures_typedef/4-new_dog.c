@@ -18,13 +18,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (mbwa == NULL)
 	{
 		free(mbwa);
+		return (NULL);
 	}
-	for (i = 0; *(name + i); i++)
+	for (i = 0; name[i]; i++)
 		;
-	for (j = 0, *(owner + j); j++)
+	for (j = 0; owner[j]; j++)
 		;
-	mbwa->name = malloc(sizeof(i + 1));
-	mbwa->owner = malloc(sizeof(j + 1));
+	mbwa->name = malloc(i + 1);
+	mbwa->owner = malloc(j + 1);
 
 	if (mbwa->name == NULL || mbwa->owner == NULL)
 	{
@@ -39,7 +40,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (k = 0; k < j; j++)
 		mbwa->owner[k] = owner[k];
-	mbwa->owner[j] = '\0';
+	mbwa->owner[k] = '\0';
 
 	mbwa->age = age;
 	return (mbwa);
