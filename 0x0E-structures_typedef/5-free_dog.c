@@ -1,4 +1,5 @@
 #include "dog.h"
+#include "stdlib.h"
 
 /**
  *free_dog - frees the memory occupied bu struct dog
