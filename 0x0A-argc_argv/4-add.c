@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, numb, result;
+	int i, j, result;
 
 	result = 0;
 	if (argc < 2)
@@ -20,15 +20,17 @@ int main(int argc, char **argv)
 	{
 		for (i = 0; i < argc; i++)
 		{
-			numb = atoi(argv[i]);
-			if (isdigit(numb) == 0)
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("%s\n", "Error");
-				return (1);
+			  if (isdigit(argv[i][j] == 0))
+				{
+					printf("%s\n","Error");
+					return (1);
+				}
 			}
-			result += numb;
-			printf("%d\n", result);
+			result += atoi(argv[i]);
 		}
 	}
+	printf("%d\n", result);
 	return (0);
 }
