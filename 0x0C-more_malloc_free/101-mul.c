@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include "stdlib.h"
+#include "stdio.h"
 /**
  *_strlen - returns the length of a string
  *@s: string considered
@@ -28,7 +29,7 @@ int _isdigit(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] < '0'; || s[i] > '9')
+		if (s[i] < '0' || s[i] > '9')
 		{
 			return (0);
 		}
@@ -58,9 +59,9 @@ int main(int argc, char **argv)
 
 	l = 0;
 	s = argv[1], s1 = argv[2];
-	if (argc < 4 || _isdigit(s1) == 0 || _isdigit(s2) == 0)
+	if (argc < 4 || _isdigit(s) == 0 || _isdigit(s1) == 0)
 		_printErrors();
-	len = _strlen(s1), len1 = _strlen(s2);
+	len = _strlen(s), len1 = _strlen(s1);
 	res = malloc((len + len1 + 1) * sizeof(int));
 	if (!res)
 		return (1);
@@ -68,11 +69,11 @@ int main(int argc, char **argv)
 		res[i] = 0;
 	for (j = len - 1; j >= 0; j--)
 	{
-		num1 = s1[len] - '0';
+		num1 = s[len] - '0';
 		carry = 0;
 		for (k = len1 - 1; k >= 0; k--)
 		{
-			num2 = s2[k];
+			num2 = s1[k];
 			carry += res[len1 + len + 1] + (num1 * num2);
 			res[len1 + len + 1] = carry % 10;
 			carry /= 10;
@@ -82,10 +83,10 @@ int main(int argc, char **argv)
 	}
 	for (i = 0; i < len - 1; i++)
 	{
-		if (result[i])
+		if (res[i])
 			l = 1;
 		if (l)
-			_putchar(result[i] + '0');
+			_putchar(res[i] + '0');
 	}
 	if (!l)
 		_putchar('0');
