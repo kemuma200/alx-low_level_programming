@@ -12,15 +12,16 @@ void print_all(const char * const format, ...)
 {
 	int i;
 	char *arg_p, *sep = "";
-
 	va_list ap;
+
 	va_start(ap, format);
+
 	i = 0;
 	if (format)
 	{
 		while (format[i])
 		{
-			switch(format[i])
+			switch (format[i])
 			{
 				case 'i':
 					printf("%s%d", sep, va_arg(ap, int));
