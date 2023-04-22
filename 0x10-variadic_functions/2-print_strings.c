@@ -4,7 +4,7 @@
 
 /**
  *print_strings - prints string followed by the separator
- *@s: separator
+ *@separator: separator
  *@n: arg count
  *
  */
