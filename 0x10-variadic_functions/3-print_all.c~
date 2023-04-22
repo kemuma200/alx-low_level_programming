@@ -1,0 +1,13 @@
+#include "variadic_functions.h"
+#include "stdargs.h"
+
+/**
+ *
+ *
+ *
+ *
+ */
+void print_all(const char * const format, ...)
+{
+  
+}
