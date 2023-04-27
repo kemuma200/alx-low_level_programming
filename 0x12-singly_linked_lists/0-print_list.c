@@ -8,7 +8,8 @@
 size_t print_list(const list_t *h)
 {
 	size_t a = 0;
-	if (h)
+
+	if (h != NULL)
 	{
 		printf("%d\n", h->str);
 		h = h->next;
