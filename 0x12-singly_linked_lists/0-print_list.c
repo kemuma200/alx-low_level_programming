@@ -3,8 +3,8 @@
 
 /**
  *print_list - prints all elements of a list
- *@h:pointer to the head
- *Return: nodes printed
+ *@h:head of list
+ *Return: count of nodes printed
  */
 size_t print_list(const list_t *h)
 {
