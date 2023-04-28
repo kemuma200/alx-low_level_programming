@@ -1,4 +1,3 @@
-
 extern	printf
 
 section	.data
@@ -9,10 +8,10 @@ section	.text
 	global	main
 
 main:
-	mov	rdi, fmt	;fmt address
-	mov	rsi, msg	;msg address
-	mov	rax, 0		;set to zero, can also use xor rax,rax
-	call	printf		;call printf function
+	mov	rdi, fmt
+	mov	rsi, msg
+	mov	rax, 0
+	call	printf
 	
-	mov	rax, 0		;no error, return val
-	ret			;return
+	mov	rax, 0
+	ret
