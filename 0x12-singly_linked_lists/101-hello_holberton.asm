@@ -1,17 +1,12 @@
-extern	printf
 
-section	.data
-	msg: db "Hello, Hoberton", 0
-	fmt: db "%s", 10, 0
-
-section	.text
 	global	main
+	extern	printf
 
 main:
 	mov	rdi, fmt
-	mov	rsi, msg
 	mov	rax, 0
 	call	printf
 	
 	mov	rax, 0
 	ret
+fmt:	db `Hello, Hoberton\n`, 0
