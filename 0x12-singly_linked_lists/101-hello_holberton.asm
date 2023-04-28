@@ -2,7 +2,7 @@
 extern	printf
 
 section	.data
-	msg: db "Hello, Hoberton" 0
+	msg: db "Hello, Hoberton", 0
 	fmt: db "%s", 10, 0
 
 section	.text
