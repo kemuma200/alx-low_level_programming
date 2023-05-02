@@ -22,12 +22,12 @@ size_t print_listint_safe(const listint_t *head)
 		first = first->next;
 		i++;
 
-		printf("[%p] %d\n", (void*)second, second->n);
+		printf("[%p] %d\n", (void *)second, second->n);
 
 		if (second <= first)
 		{
-	  		printf("[%p] %d\n", (void*)first, first->n);
-	 		break;
+			printf("[%p] %d\n", (void *)first, first->n);
+			break;
 		}
 	}
 	return (i);
