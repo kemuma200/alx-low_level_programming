@@ -2,9 +2,8 @@
 
 /**
  *factorial - gets the factorial of a number
- *@n: integer being considered 
- *Return: factorial of teh number, -1 if teh number is less than zero
- *
+ *@n: integer being considered
+ *Return: factorial of teh number, -1 if the number is less than zero
  */
 
 int factorial(int n)
