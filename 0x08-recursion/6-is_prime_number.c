@@ -2,8 +2,8 @@
 
 /**
  *get_prime - determines whether a number is prime or not
- *@a: integer 
- *@n: parameter considered
+ *@a:integer
+ *@n:parameter considered
  *Return: 1 if prime, otherwise 0
  */
 int get_prime(int a, int n)
@@ -12,7 +12,7 @@ int get_prime(int a, int n)
 		return (1);
 	if (a == 0)
 		return (0);
-	return get_prime(a + 1, n);
+	return (get_prime(a + 1, n));
 
 }
 
