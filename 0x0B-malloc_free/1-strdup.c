@@ -1,0 +1,32 @@
+#include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
+
+/**
+ *_strdup - duplicates a string
+ *@str: considered string
+ *Return: pointer to string, otherwise NULL
+ *
+ */
+
+char *_strdup(char *str)
+{
+	char *p;
+	unsigned int a, len;
+
+	if (str == NULL)
+		return (NULL);
+	/* get length of string */
+	len = 0;
+	while (*(str + len) != '\0')
+		len++;
+
+	p = malloc((len + 1) * sizeof(char));
+	if (p == NULL)
+		return (NULL);
+
+	for (a = 0; a < len; a++)
+		p[a] = str[a];
+
+	return (p);
+}
