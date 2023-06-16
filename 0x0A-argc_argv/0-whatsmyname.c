@@ -2,8 +2,8 @@
 
 /**
  *main - prints the name of the program
- *@argc - argument count
- *@argv - argument array
+ *@argc: argument count
+ *@argv: argument array
  *Return: 0
  */
 int main(int argc, char **argv)
