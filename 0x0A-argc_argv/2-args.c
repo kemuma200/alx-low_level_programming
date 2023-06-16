@@ -3,7 +3,7 @@
 /**
  *main - prints all the arguments availed
  *@argc: argument count
- *@argv - argument array
+ *@argv: argument array
  *Return: 0
  */
 
