@@ -2,8 +2,8 @@
 
 /**
  *main - multiplies two numbers
- *@argc - argument count
- *@argv - argument array
+ *@argc: argument count
+ *@argv: argument array
  *Return: 0 if successful, else 1
  *
  */
