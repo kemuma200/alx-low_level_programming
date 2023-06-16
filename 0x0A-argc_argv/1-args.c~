@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ *main - prints the number of arguments
+ *@argc - argument count
+ *@argv - argument array
+ *Return: 0
+ *
+ */
+
+int main(int argc, char *argv[])
+{
+	int i;
+	int summ = 0;
+
+	for (i = 0; i < argc; i++)
+	{
+		summ += argv[i];
+	}
+	printf("%d\n", summ)
+	return (0);
+}
