@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *main - prints the minimum number of coins to make change for an amount of money
- *@argc - argument count
- *@argv - argument array
+ *main - prints the minimum number of coins to make
+ *change for an amount of money
+ *@argc: argument count
+ *@argv: argument array
  *Return: 0 if success, 1 if error
  */
 int main(int argc, char **argv)
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
 	{
 		if (i >= coins[b])
 		{
-		  t_coins += (i / coins[b]);
+			t_coins += (i / coins[b]);
 		}
 		i = i % coins[b];
 	}

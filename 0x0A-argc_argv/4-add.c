@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include <ctype.h>
 
 /**
@@ -11,7 +14,7 @@
 
 int main(int argc, char **argv)
 {
-	int i, j, length;
+	int i, j, len;
 	int summ = 0;
 	char *p;
 
@@ -31,7 +34,7 @@ int main(int argc, char **argv)
 					return (1);
 				}
 			}
-			summ += atoi(srgv[i]);
+			summ += atoi(argv[i]);
 		}
 		printf("%d\n", summ);
 	}
