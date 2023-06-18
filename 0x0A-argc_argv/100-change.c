@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 	int i, t_coins, b;
-	int coins[] = [25, 10, 5, 2, 1];
+	int coins[] = {25, 10, 5, 2, 1};
 
 
 	if (argc != 2)
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	i = atoi(argv[1]);
 	t_coins = 0;
 	if (i < 0)
-		print("%d\n", 0);
+		printf("%d\n", 0);
 
 	for (b = 0; b < 5 && i >= 0; b++)
 	{
