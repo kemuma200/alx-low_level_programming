@@ -7,7 +7,7 @@
 /**
  *main - program that adds positive numbers
  *@argc: argument count
- *@argv - argument array
+ *@argv: argument array
  *Return: 0 if successful, else 1
  *
  */
