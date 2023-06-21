@@ -2,11 +2,11 @@
 #define __MAIN_H__
 
 
-struct{
+typedef struct{
   char *name;
   float age;
   char *owner;
-}
+} dog_t;
 
 
 #endif
