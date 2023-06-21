@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *malloc_checked - 
+ *malloc_checked - allocates memory
  *@b: integer considered
  *Return: pointer to allocated memory, else 98
  *
