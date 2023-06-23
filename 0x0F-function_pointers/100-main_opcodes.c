@@ -7,7 +7,7 @@
  *Return: 0 if succesful
  *
  */
-int main(int *argc, char **argv)
+int main(int argc, char **argv)
 {
 	int a, p;
 	char *b;
@@ -32,7 +32,7 @@ int main(int *argc, char **argv)
 			printf("%02hhx\n", b[a]);
 			break;
 		}
-		printf("%02hhx", b[i]);
+		printf("%02hhx ", b[a]);
 	}
 	return (0);
 }
