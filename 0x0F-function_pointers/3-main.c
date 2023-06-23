@@ -23,15 +23,15 @@ int main(int __attribute__((__unused__))argc, char **argv)
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	op = atoi(argv[2]);
+	op = argv[2];
 
-	if (get_op_func == NULL || num1 == '\0')
+	if (get_op_func(op) == NULL || num1 == '\0')
 	{
 		printf("%s\n", "Error");
 		exit(99);
 	}
-	if ((op == '/' && num2 == 0) ||
-	    (op == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) ||
+	    (*op == '%' && num2 == 0))
 	{
 		printf("%s\n", "Error");
 		exit(100);
