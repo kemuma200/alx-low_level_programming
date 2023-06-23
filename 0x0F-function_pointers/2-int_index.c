@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdbool.h>
 
 /**
  *cmp - searches an integer array for a value
@@ -21,7 +22,7 @@ bool cmp(const void *a, const void *b)
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int c;
+	int c;
 
 	if (array == NULL || size <= 0 || cmp == NULL)
 		return (-1);
