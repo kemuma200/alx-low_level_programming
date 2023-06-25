@@ -10,11 +10,11 @@
  */
 int _isDigit(char *s)
 {
-	int i;
+	int i = 0;
 
 	while (s[i])
 	{
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[i] < '0' || s[i] > '9')
 			return (0);
 		i++;
 	}
@@ -26,7 +26,8 @@ int _isDigit(char *s)
  *errors - Rendered when an error is encountered
  *
  */
-void errors(void){
+void errors(void)
+{
 	printf("%s\n", "Error");
 	exit(98);
 }
@@ -48,9 +49,9 @@ int _strlen(char *s)
 }
 
 /**
- *main- multiplies two numbers
- *@argc - argument count
- *@argv - argument array
+ *main - multiplies two numbers
+ *@argc: argument count
+ *@argv: argument array
  *Return: 0 if successful, else error
  *
  */
@@ -60,17 +61,15 @@ int main(int argc, char **argv)
 	char *s1, *s2;
 	int len1, len2, carry, dig1, dig2, a, i = 0, *p;
 
-	s1 = argv[1];
-	s2 = argv[2];
+	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !_isDigit(s1) || !_isDigit(s2))
 		errors();
-	len1 = _strlen(argv[1]);
-	len2 = _strlen(argv[2]);
+	len1 = _strlen(argv[1]), len2 = _strlen(argv[2]);
 
 	p = malloc(sizeof(int) * (len1 + len2 + 1));
 	if (p == NULL)
 		return (1);
-	for (a = 0; i < (len1 + len2); a++)
+	for (a = 0; a < (len1 + len2); a++)
 		p[a] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
@@ -87,14 +86,14 @@ int main(int argc, char **argv)
 		if (carry > 0)
 			p[len1 + len2 + 1] += carry;
 	}
-	for (i = 0; i < i - 1; i++)
+	for (a = 0; a < (len1 + len2); a++)
 	{
-		if (p[i])
-			i = 1;
-		if (a)
-			_putchar(p[i] + '0');
+		if (p[a])
+			a = 1;
+		if (i)
+			_putchar(p[a] + '0');
 	}
-	if (!a)
+	if (!i)
 		_putchar('0');
 	_putchar('\n');
 	free(p);
