@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		{
 			t_coins += (i / coins[b]);
 		}
-		i %= (i % coins[b]);
+		i %= coins[b];
 	}
 	printf("%d\n", t_coins);
 	return (0);
