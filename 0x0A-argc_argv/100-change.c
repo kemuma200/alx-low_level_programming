@@ -23,7 +23,10 @@ int main(int argc, char **argv)
 	i = atoi(argv[1]);
 	t_coins = 0;
 	if (i < 0)
+	{
 		printf("%d\n", 0);
+		return (1);
+	}
 
 	for (b = 0; b < 5 && i >= 0; b++)
 	{
