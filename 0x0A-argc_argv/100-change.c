@@ -29,10 +29,9 @@ int main(int argc, char **argv)
 	{
 		while (i >= coins[b])
 		{
-			t_coins ++;
-			i -= coins[b];
+			t_coins += (i / coins[b]);
 		}
-
+		i %= (i % coins[b]);
 	}
 	printf("%d\n", t_coins);
 	return (0);
