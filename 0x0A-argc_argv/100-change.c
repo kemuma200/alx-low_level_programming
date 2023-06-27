@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
 	for (b = 0; b < 5 && i >= 0; b++)
 	{
-		if (i >= coins[b])
+		while (i >= coins[b])
 		{
 			t_coins ++;
 			i -= coins[b];
