@@ -1,4 +1,7 @@
+;64-bit program in assembly that prints Hello, Holberton, followed by a new line
+
 extern printf
+	
 section .data
 	msg:	db "Hello, Hoberton", 0
 	fmt:	db "%s", 10, 0
