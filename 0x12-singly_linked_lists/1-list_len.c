@@ -1,6 +1,6 @@
-#include "lists.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  *list_len - finds the number of nodes
