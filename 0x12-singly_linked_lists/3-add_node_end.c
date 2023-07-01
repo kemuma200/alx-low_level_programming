@@ -1,7 +1,7 @@
-#include "list.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "lists.h"
 
 /**
  *_strlen - gets str length
@@ -37,8 +37,8 @@ void *_strdup(const char *old)
 		return (NULL);
 	}
 	for (a = 0; old[a]; a++)
-		new[i] = old[i];
-	new[i] = '\0';
+		new[a] = old[a];
+	new[a] = '\0';
 	return (new);
 }
 
