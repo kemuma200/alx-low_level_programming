@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *a - prints text before main
  *
  */
