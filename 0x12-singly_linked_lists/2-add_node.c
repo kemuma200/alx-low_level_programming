@@ -1,5 +1,6 @@
-#include "lists.h"
+#include <stddef.h>
 #include <stdlib.h>
+#include "lists.h"
 
 
 /**
@@ -38,9 +39,9 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	for (a = 0; str[a]; a++)
-		p[i] = str[i];
+		p[a] = str[a];
 
-	news = malloc(sizeof(list_t));
+	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
 		free(p);
