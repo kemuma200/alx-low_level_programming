@@ -5,8 +5,6 @@
 /**
  *free_list - frees a linked list
  *@head: linked list
- *
- *
  */
 void free_list(list_t *head)
 {
