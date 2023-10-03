@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 		/* adding a new line for each string and  a null pointer */
 		k += ac;
 	}
-	p = malloc(sizeof(char) * (k + 1));
+	p = malloc(sizeof(char) * k + 1);
 	if (p == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
