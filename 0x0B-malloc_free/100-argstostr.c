@@ -39,7 +39,8 @@ char *argstostr(int ac, char **av)
 			a++;
 		}
 		if (p[a] == '\0')
-			p[a + 1] = '\n';
+			p[a++] = '\n';
+
 	}
 
 	return (p);
