@@ -5,7 +5,7 @@
  *@head: head of a linked list
  *@n: data to insert to the new element
  *
- *Return:
+ *Return:address of new element or NULL
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
@@ -23,8 +23,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	else
 	{
-		*last = *head;
-		while (*last != NULL)
+		last = *head;
+		while (last->next != NULL)
 		{
 			last = last->next;
 		}
