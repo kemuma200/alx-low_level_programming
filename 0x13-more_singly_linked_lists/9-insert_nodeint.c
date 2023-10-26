@@ -7,7 +7,7 @@
  *@idx: idnex where node should be added
  *@n:data to insert
  *
- *Retunr: addres of new node or NULL
+ *Return: addres of new node or NULL
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
