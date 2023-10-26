@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *int sum_listint-function that returns the linkedlist
+ *sum_listint-function that returns the linkedlist
  *@head:list
  *
  *Return: sum of the node values
