@@ -1,14 +1,39 @@
 #include "lists.h"
 
 /**
- *listint_t *insert_nodeint_at_index
- *@head:
- *@idx:
- *@n:
+ *delete_nodeint_at_index - function that deletes the node at index
+ *@head:list
+ *@index:node index
  *
- *Return:
+ *
+ *Return: 1 if success, else -1
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t tmp;
+	listint_t *tmp;
+	listint_t *p = *head;
+	unsigned int i = 0;
+
+	if (!head || *head == NULL)
+		return (-1);
+
+
+	if (index == 0)
+	{
+		*head = (*head)->next;
+		free(p);
+		return (1);
+	}
+	while (p && i < index)
+	{
+		if (p->next == NULL)
+			return (-1);
+		p = p->next;
+		i++;
+	}
+	tmp = p->next;
+	p->next = tmp->next;
+	free(tmp);
+	return (1);
+
 }
