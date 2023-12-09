@@ -3,7 +3,7 @@
 /**
  *sum_dlistint - get the sum of list nodes
  *@head: linked list
- *RReturn: sum of nodes
+ *Return: sum of nodes
  *
  */
 int sum_dlistint(dlistint_t *head)
