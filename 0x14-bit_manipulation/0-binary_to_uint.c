@@ -13,16 +13,16 @@ unsigned int binary_to_uint(const char *b)
 	int num = 0;
 	int mult = 1;
 
-	if (*b == '\0' || !b || !(*b))
+	if (*b == '\0')
 		return (0);
 	while (*(b + len) != '\0')
 	{
-		if (*(b + len) != '0' &&  *(b + len) != '1')
-			return (0);
 		len++;
 	}
 	for (len -= 1; len >= 0; len--)
 	{
+		if (*(b + len) != '0' && *(b + len) != '1')
+			return (0);
 		num += (b[len] - '0') * mult;
 		mult *= 2;
 	}
