@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  *binary_to_uint - function that converts
@@ -13,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	int num = 0;
 	int mult = 1;
 
-	if (*b == '\0')
+	if (*b == '\0' || b == NULL)
 		return (0);
 	while (*(b + len) != '\0')
 	{
