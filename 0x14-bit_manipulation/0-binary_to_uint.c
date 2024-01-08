@@ -11,10 +11,10 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int len = 0;
-	int num = 0;
-	int mult = 1;
+	unsigned int num = 0;
+	unsigned int mult = 1;
 
-	if (b == '\0' || b == NULL)
+	if (*b == '\0' || b == NULL)
 		return (0);
 	while (*(b + len) != '\0')
 	{
