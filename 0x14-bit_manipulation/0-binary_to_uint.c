@@ -14,7 +14,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num = 0;
 	unsigned int mult = 1;
 
-	if (*b == '\0' || b == NULL)
+
+	if (*b == '\0' || b == NULL || !b)
 		return (0);
 	while (*(b + len) != '\0')
 	{
